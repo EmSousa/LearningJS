@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio5</title>
+</head>
+<body>
+
+    <form id="frmGame">
+        <!--Nome do jogo-->
+        <label for="txtGameName">Nome do jogo</label>
+        <input id="txtGameName" type="text" required>
+        <br>
+        <!--Ano do jogo-->
+        <label for="txtGameYear">Ano do jogo</label>
+        <input id="txtGameYear" type="number" required>
+        <br>
+        <!--Género do jogo-->
+        <label for="txtGameGenre">Género do jogo</label>
+        <select id="txtGameGenre">
+            <option value="acao">Ação</option>
+            <option value="aventura">Aventura</option>
+            <option value="desporto" selected>Desporto</option>
+            <option value="estrategia">Estratégia</option>
+            <option value="simulacao">Simulação</option>
+        </select>
+        <br>
+        <!--Capa do jogo-->
+        <label for="txtGameCover">Capa do jogo</label>
+        <input id="txtGameCover" type="url" required>
+        <br>
+        <!--Botões-->
+        <input type="submit" value="ADICIONAR">
+        <input type="reset" value="REPOR">
+        <br>
+    </form>
+    <hr>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Ano</th>
+            <th>Género</th>
+            <th>Capa</th>
+            <th>Opções</th>
+        </tr>
+    </table>
+
+
+    <script src="Ex5.js"></script>
+    
+</body>
+</html>
