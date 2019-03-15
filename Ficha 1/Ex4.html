@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio4</title>
+</head>
+
+<body>
+    <!-- 1a) Através de um atributo HTML-->
+    <!-- <input type="button" onclick="alert('Olá Mundo!')" value="CLICA-ME"> -->
+
+
+    <script>
+        window.addEventListener("load", function () {
+            const myButton = document.querySelector("#myButton")
+            const myTextBox = document.querySelector("#myTextBox")
+            const myP = document.querySelector("#myP")
+
+            //1b)Através de uma propriedade DOM
+            /* document.querySelector("input").onclick = function() {
+            alert("Olá Mundo!") 
+            } */
+            //1c) Através da adição de um ouvinte (listener)
+
+            myButton.addEventListener("click", function () {
+                //alert("Olá Mundo!") 
+                alert(myTextBox.value.length)
+            })
+            // 2b Adicione ao ficheiro uma caixa de texto e um parágrafo. Crie um listener que vai reproduzir o que for escrito na caixa de texto para o parágrafo. 
+            myTextBox.addEventListener("input", function () {
+                myP.innerHTML = myTextBox.value
+            })
+            // 2c Adicione um novo listener ao botão que ao fim da pressão do botão deve enviar uma mensagem para a consola com o texto “obrigado pelo clique no botão!” 
+            myButton.addEventListener("mouseup", function () {
+                alert("obrigado pelo clique no botão!")
+            })
+        })
+
+
+    </script>
+
+    <input id="myTextBox" type="text">
+    <p id="myP"></p>
+    <input id="myButton" type="button" value="CLICA-ME">
+
+    </script>
+</body>
+
+</html>
