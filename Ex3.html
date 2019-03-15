@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 3</title>
+</head>
+
+<body>
+    <script>
+        /* const table = document.createElement("table")
+        const tr1 = document.createElement("tr")
+        const tr2 = document.createElement("tr")
+        const th1 = document.createElement("th")
+        const th2 = document.createElement("th")
+        const td1 = document.createElement("td")
+        const td2 = document.createElement("td")
+        const tx1 = document.createTextNode("Escola")
+        const tx2 = document.createTextNode("Local")
+        const tx3 = document.createTextNode("ESMAD")
+        const tx4 = document.createTextNode("Vila do Conde")
+
+        th1.appendChild(tx1)
+        th2.appendChild(tx2)
+        td1.appendChild(tx3)
+        td1.appendChild(tx4)
+
+        tr1.appendChild(th1)
+        tr1.appendChild(th2)
+
+        tr2.appendChild(td1)
+        tr2.appendChild(td2)
+
+        table.appendChild(tr1)
+        table.appendChild(tr2)
+
+        document.body.appendChild(table) */
+
+        //b.
+        document.body.innerHTML += `<table>
+            <tr>
+                <th>escola</th>
+                <th>local</th>
+            </tr>
+            <tr>
+                <td>ESMAD</td>
+                <td>Vila do Conde</td>
+            </tr>
+        </table>
+        `    
+        
+        //c.
+       /*  const table = document.querySelector("table")
+        table.innerHTML += `<tr><td>ISEP</td><td>Porto</td></tr>` */
+
+        //d. 
+        const lastTd = document.querySelector("td:last-of-type")
+        lastTd.innerHTML = "Vila do Conde/Povoa de Varzim"
+
+        //e.
+        const tbody = document.querySelector("tbody")
+        const tr = document.querySelector("tr:first-of-type")
+        tbody.removeChild(tr)
+
+    </script>
+
+</body>
+
+</html>
