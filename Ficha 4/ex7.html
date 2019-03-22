@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biblioteca de filmes</title>
+</head>
+
+<body>
+    <h1>Videoteca</h1>
+    <br>
+
+    <form id="videoteca">
+        <label for="movieName">Título do Filme</label>
+        <input id="movieName" type="text" required>
+        <br>
+        <label for="movieGenre">Género do Filme</label>
+        <select id="movieGenre">
+            <option value="aventura">Aventura</option>
+            <option value="acao">Ação</option>
+            <option value="comedia" selected>Comédia</option>
+            <option value="terror">Terror</option>
+            <option value="romance">Romance</option>
+            <option value="thriller">Thriller</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br>
+        <label for="movieYear">Ano do Filme</label>
+        <input id="movieYear" type="number" min="1900" max="" required>
+        <br>
+        <label for="movieCover">Capa do Filme</label>
+        <input id="movieCover" type="url" required>
+        <br>
+        <label for="movieTrailer">Trailer do Filme</label>
+        <input id="movieTrailer" type="url">
+        <br>
+        <input type="submit" value="Submeter">
+        <input type="reset" value="Reset">
+        <hr>
+
+    </form>
+
+    <table></table>
+
+    <dialog id="dlgCover">
+        <img src=""></img>
+    </dialog>
+
+    <dialog id="dlgTrailer">
+        
+    </dialog>
+
+
+    <script src="ex7.js"></script>
+</body>
+
+</html>
